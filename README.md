@@ -5,7 +5,7 @@ This project implements a bioinformatics pipeline for germline BRCA1/2 mutation 
 
 ## EXAMPLE TREE ##
 # Above Scripts create folder structure like below 
-Deliverables/
+Automate/
 ├── 00_logs
 │   ├── SRR27970273SB_alignment.log
 │   ├── SRR27970273SB_alignment.ok
@@ -105,4 +105,3 @@ Deliverables/
     ├── SRR31058545SB_filtered_variants.vcf.idx
     ├── SRR31058545SB_raw_variants.vcf
     └── SRR31058545SB_raw_variants.vcf.idx
-
