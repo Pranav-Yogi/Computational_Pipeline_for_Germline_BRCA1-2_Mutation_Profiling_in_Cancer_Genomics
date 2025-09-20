@@ -8,33 +8,43 @@ Using containerized tool in pipeline give great flexibility and install all depe
 ## Summary of OUTPUT & Annotated VCF ##
 1.Basic Structure
 
-Columns: CHROM, POS, ID, REF, ALT, QUAL, FILTER, INFO, FORMAT, SAMPLE
-Each row = one variant at a genomic position.
+- Columns: CHROM, POS, ID, REF, ALT, QUAL, FILTER, INFO, FORMAT, SAMPLE
+
+- Each row = one variant at a genomic position.
 
 2.Variant Details
 
-CHROM, POS, REF, ALT → Location & nucleotide change.
-QUAL, FILTER → Confidence score & filtering flags.
+- CHROM, POS, REF, ALT → Location & nucleotide change.
+
+- QUAL, FILTER → Confidence score & filtering flags.
 
 3.Annotations (INFO Field)
 
-Standard variant stats: AC, AF, AN, DP, FS, MQ, QD, SOR.
-FUNCOTATION block → gene name, transcript, variant type (SNP/InDel), genomic notation, cDNA/protein change, flanking sequence, boolean flags.
+- Standard variant stats: AC, AF, AN, DP, FS, MQ, QD, SOR.
+
+- FUNCOTATION block → gene name, transcript, variant type (SNP/InDel), genomic notation, cDNA/protein change, flanking sequence, boolean flags.
 
 4.Sample-Specific Data (FORMAT + Sample Column)
 
-GT → Genotype (e.g., 0/1, 1/1).
-AD → Allelic depths (ref vs alt read counts).
-DP → Depth of coverage.
-FT → Sample-level filters (DP_filter, GQ_filter, etc.).
-GQ, PL → Genotype quality & likelihoods.
+- GT → Genotype (e.g., 0/1, 1/1).
+
+- AD → Allelic depths (ref vs alt read counts).
+
+- DP → Depth of coverage.
+
+- FT → Sample-level filters (DP_filter, GQ_filter, etc.).
+
+- GQ, PL → Genotype quality & likelihoods.
 
 5.Utility of This VCF
 
-Allows variant effect interpretation (synonymous, missense, splice, etc.).
-Provides gene/transcript context for each mutation.
-Enables filtering by gene (e.g., BRCA1/BRCA2), consequence type, or allele frequency.
-Ready for downstream use in clinical interpretation, population studies, or mutation burden analysis.
+- Allows variant effect interpretation (synonymous, missense, splice, etc.).
+
+- Provides gene/transcript context for each mutation.
+
+- Enables filtering by gene (e.g., BRCA1/BRCA2), consequence type, or allele frequency.
+
+- Ready for downstream use in clinical interpretation, population studies, or mutation burden analysis.
 
 
 ## EXAMPLE TREE ##
