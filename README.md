@@ -1,6 +1,8 @@
 # Computational_Pipeline_for_Germline_BRCA1-2_Mutation_Profiling_in_Cancer_Genomics
 This project implements a bioinformatics pipeline for germline BRCA1/2 mutation identification from NGS data. Raw sequencing reads undergo quality assessment with FastQC and preprocessing with Fastp to ensure high-quality input. Reads are then aligned to the human reference genome (hg38) using BWA-MEM, followed by sorting, duplicate marking, and base quality recalibration with Samtools and GATK. Variant discovery is performed with GATK HaplotypeCaller, and raw variants are subjected to stringent filtering to minimize false positives. High-confidence variants are then annotated using GATK Funcotator with reference databases, focusing on clinically relevant BRCA1/2 mutations. The pipeline provides an end-to-end workflow from raw data to annotated germline variants, enabling downstream analysis in cancer risk assessment and precision medicine research.
 
+This pipeline use Singularity container for tool implementation. Make sure Your Linux system has singularity installed in.  
+Using containerized tool in pipeline give great flexibility and install all dependency in one container, cherry on cake its fast and efficient then local tools.
 
 
 ## EXAMPLE TREE ##
